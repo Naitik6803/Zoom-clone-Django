@@ -126,3 +126,9 @@ STATICFILES_DIRS=[os.path.join(BASE_DIR,'Static')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ASGI_APPLICATION='Mysite.asgi.application'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
